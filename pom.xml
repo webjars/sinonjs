@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -12,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>sinonjs</artifactId>
-    <version>1.7.3-SNAPSHOT</version>
+    <version>1.7.3</version>
     <name>SinonJS</name>
     <description>A javascript library for unit testing</description>
     <url>http://webjars.org</url>
@@ -29,7 +28,7 @@
         <url>http://github.com/webjars/sinonjs</url>
         <connection>scm:git:https://github.com/webjars/sinonjs.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/sinonjs.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>sinonjs-1.7.3</tag>
     </scm>
 
     <developers>
