@@ -42,7 +42,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sinon.version>1.7.3</sinon.version>
-        <sinon.url>https://github.com/cjohansen/Sinon.JS/archive</sinon.url>
+        <sinon.url>http://sinonjs.org/releases</sinon.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${sinon.version}</destDir>
     </properties>
 
@@ -60,35 +60,13 @@
                         </goals>
                         <configuration>
                             <url>${sinon.url}</url>
-                            <fromFile>v${sinon.version}.zip</fromFile>
-                            <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
+                            <fromFile>sinon-${sinon.version}.js</fromFile>
+                            <toFile>${destDir}/sinon.js</toFile>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
 
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                    <execution>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                        <configuration>
-                            <target>
-                                <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
-                                <echo message="moving resources" />
-                                <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/Sinon.JS-${sinon.version}/lib" />
-                                </move>
-                            </target>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
