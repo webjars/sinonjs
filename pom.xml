@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>sinonjs</artifactId>
-    <version>1.17.2-1-SNAPSHOT</version>
+    <version>1.17.2-SNAPSHOT</version>
     <name>SinonJS</name>
     <description>A javascript library for unit testing</description>
     <url>http://webjars.org</url>
